@@ -7,30 +7,14 @@ public class Homework {
 
         if (month <= 0 || month > 12) {
             System.out.println("Invalid data");
-        } else if (month == 1) {
-            System.out.println("January");
-        } else if (month == 2) {
-            System.out.println("February");
-        } else if (month == 3) {
-            System.out.println("Mart");
-        } else if (month == 4) {
-            System.out.println("April");
-        } else if (month == 5) {
-            System.out.println("May");
-        } else if (month == 6) {
-            System.out.println("June");
-        } else if (month == 7) {
-            System.out.println("July");
-        } else if (month == 8) {
-            System.out.println("August");
-        } else if (month == 9) {
-            System.out.println("September");
-        } else if (month == 10) {
-            System.out.println("October");
-        } else if (month == 11) {
-            System.out.println("November");
-        } else if (month == 12) {
-            System.out.println("December");
+        } else if (month == 12 || month < 3 ) {
+            System.out.println("Spring");
+        } else if (month < 6) {
+            System.out.println("Summer");
+        } else if (month < 9) {
+            System.out.println("Autumn");
+        } else if (month < 12)  {
+            System.out.println("Winter");
         }
 
         // Дана переменная sum - сумма покупки и переменна saleCode - номер купона.
@@ -61,7 +45,7 @@ public class Homework {
         } else if (count < 90 && count >= 60) {
             System.out.println("Good");
         } else if (count < 60 && count >= 40) {
-            System.out.println("Satisfactorily");
+            System.out.println("Satisfactory");
         } else if (count < 40 && count >= 0) {
             System.out.println("Try again another time");
         } else {
